@@ -15,12 +15,6 @@ import Navbar from "./Globals/Navbar"
 const Layout = ({ children }) => (
   <>
     <Navbar />
-    <div className="a mt-5">tosi TOSI</div>
-    <div className="b mt-5">tosi TOSI</div>
-    <div className="c mt-5">tosi TOSI</div>
-    <div className=""></div>
-    <div></div>
-    <div></div>
     {children}
   </>
 )

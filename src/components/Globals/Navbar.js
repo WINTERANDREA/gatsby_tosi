@@ -35,7 +35,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-sm bg-light navbar-light">
+    <nav className="navbar navbar-expand-sm  navbar-light">
       <Link to="/" className="navbar-brand">
         <img style={{ maxWidth: 70 }} src={logo} alt="logo" />
       </Link>

@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: var(--tosi-header);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .text-green {
@@ -34,4 +34,22 @@ h6 {
   cursor: pointer;
   color: var(--tosi-green);
   font-size: 2rem;
+}
+
+.subtitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.default-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--tosi-green);
 }
