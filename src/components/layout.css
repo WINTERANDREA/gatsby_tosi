@@ -1,18 +1,18 @@
 :root {
   /* COLOR */
-  --tosi-green: #3a5d49;
+  --tosi-green: rgb(58, 93, 73);
   --tosi-white: #ffffff;
   --tosi-black: #272526;
 
   /* FONTS */
-  --tosi-header: "EB Garamond", serif;
-  --tosi-body: "Cormorant Garamond", serif;
+  /*   --tosi-header: "EB Garamond", serif;
+  --tosi-body: "Cormorant Garamond", serif; */
 }
 
 body {
   background: var(--tosi-white);
   color: var(--tosi-black);
-  font-family: var(--tosi-header);
+  /*  font-family: var(--tosi-header); */
   font-weight: 400;
 }
 
@@ -22,10 +22,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tosi-header);
+  /* font-family: var(--tosi-header); */
   font-weight: 400;
 }
 
+.row {
+  margin: 0;
+}
 .text-green {
   color: var(--tosi-green);
 }
@@ -52,4 +55,16 @@ h6 {
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--tosi-green);
+}
+
+.tosi-shop-1 {
+  background: #ffffff;
+}
+
+.contact {
+  background-color: rgb(58, 93, 73);
+}
+
+.form {
+  color: #ffffff;
 }

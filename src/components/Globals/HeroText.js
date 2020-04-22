@@ -14,7 +14,6 @@ const HeroText = ({ title, subtitle }) => {
 HeroText.defaultProps = {
   title: "TOSI",
   subtitle: "Produzione artigianale Gorgonzola DOP dal 1960",
-  styleClass: "default-hero",
 }
 
 export default HeroText
