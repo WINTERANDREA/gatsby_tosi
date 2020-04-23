@@ -77,7 +77,7 @@ h6 {
 
 /* SNIPCART */
 .snip-header {
-  background: #663399;
+  background: #663399 !important;
 }
 .snip-layout__main-container {
   border: 2px solid black;
