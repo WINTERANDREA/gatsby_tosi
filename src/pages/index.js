@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <HeroText />
     <Hero img={data.img.childImageSharp.fluid} styleClass="default-hero" />
-    <Product items={data.list} />
-    <Products2 />
+    {/* <Product items={data.list} />
+    <Products2 /> */}
     <Contact />
   </Layout>
 )
