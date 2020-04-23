@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Globals/Hero"
 import HeroText from "../components/Globals/HeroText"
-import Product from "../components/Home/product"
+import Product from "../components/Home/Product"
 import Products2 from "../components/Home/Products2"
 import Contact from "../components/Home/Contact"
 
@@ -14,8 +14,8 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <HeroText />
     <Hero img={data.img.childImageSharp.fluid} styleClass="default-hero" />
-    {/* <Product items={data.list} />
-    <Products2 /> */}
+    <Product items={data.list} />
+    <Products2 />
     <Contact />
   </Layout>
 )
