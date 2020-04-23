@@ -15,9 +15,9 @@ const getProducts2 = graphql`
           price
           category
           image {
-            fluid(maxHeight: 50) {
+            fixed(height: 400) {
               src
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFixed_tracedSVG
             }
           }
         }

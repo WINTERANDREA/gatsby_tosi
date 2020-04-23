@@ -46,6 +46,12 @@ h6 {
 }
 
 .default-hero {
+  /* background: linear-gradient(
+    to top,
+    rgba(58, 93, 73, 0.3),
+    rgba(58, 93, 73, 0.8)
+  );
+  opacity: 1 !important; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -67,4 +73,13 @@ h6 {
 
 .form {
   color: #ffffff;
+}
+
+/* SNIPCART */
+.snip-header {
+  background: #663399;
+}
+.snip-layout__main-container {
+  border: 2px solid black;
+  padding: 3px;
 }
