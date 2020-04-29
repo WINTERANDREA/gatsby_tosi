@@ -35,7 +35,9 @@ const Products2 = props => {
           return (
             <section className="py-5">
               <div className="container">
-                <h2 className="text-center mb-5 text-green">TOSI SHOP</h2>
+                <h5 className="text-center mb-5 text-green">
+                  VETRINA TEST TELEFONO
+                </h5>
                 <div className="row">
                   {data.list.edges.map(({ node: product }) => (
                     <Product2 key={product.id} product={product} />

@@ -37,18 +37,18 @@ const Product = props => {
   if (product.prodotti.length > 0) {
     return (
       <section className="tosi-shop-1">
-        <div className="container">
-          <h2 className="text-center mb-5 text-green">TOSI SHOP</h2>
+        <div className="container prodotti-section">
+          <h5 className="text-center mb-5 text-green">VETRINA TEST</h5>
 
           {/* categorie */}
           <div className="row mb-5">
-            <div className="col-10 mx-auto text-center">
+            <div className="col-12 mx-auto text-center">
               {product.categorie.map((categoria, index) => {
                 return (
                   <button
                     type="button"
                     key={index}
-                    className="btn btn-tosi text-capitalize m-3"
+                    className="btn btn-transparent text-capitalize m-3"
                     onClick={() => {
                       mostraProdotti(categoria)
                     }}
@@ -60,12 +60,12 @@ const Product = props => {
             </div>
           </div>
           {/* prodotti */}
-          <div className="row">
+          <div className="row prodotti-container">
             {product.prodotti.map(({ node }) => {
               return (
                 <div
                   key={node.id}
-                  className="col-11 col-md-6 my-3 d-flex mx-auto"
+                  className="scheda-prodotto col-11 my-3 d-flex mx-auto"
                 >
                   <div>
                     <Img fixed={node.image.fixed} objectFit="contain" />
@@ -79,11 +79,11 @@ const Product = props => {
                         <h6 className="mb-0 text-green">€{node.price}</h6>
                       </small>
                     </div>
-                    <p className="text-muted">
+                    <p className="text-muted product-description">
                       <small>{node.description.description}</small>
                     </p>
                     <button
-                      className="btn btn-secondary mt-3 text-capitalize snipcart-add-item"
+                      className="btn btn-green mt-3 snipcart-add-item"
                       data-item-id={node.id}
                       data-item-price={node.price}
                       data-item-url="/paintings/starry-night"
@@ -91,7 +91,7 @@ const Product = props => {
                       data-item-image={node.image.fixed.src}
                       data-item-name={node.title}
                     >
-                      add to cart
+                      Aggiungi prodotto
                     </button>
                   </div>
                 </div>

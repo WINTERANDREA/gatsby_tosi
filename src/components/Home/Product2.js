@@ -15,7 +15,7 @@ const Product2 = ({ product }) => {
           <h6>{product.title}</h6>
           <h6>€{product.price}</h6>
           <div
-            className="btn btn-secondary mt-3 text-capitalize snipcart-add-item"
+            className="btn btn-green mt-3  snipcart-add-item"
             data-item-id={product.id}
             data-item-price={product.price}
             data-item-url="/paintings/starry-night"
@@ -23,7 +23,7 @@ const Product2 = ({ product }) => {
             data-item-name={product.title}
             data-item-image={product.image.fixed.src}
           >
-            add to cart
+            Aggiungi prodotto
           </div>
         </div>
       </div>

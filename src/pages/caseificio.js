@@ -1,27 +1,22 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/Globals/Hero"
-import HeroText from "../components/Globals/HeroText"
-import Product from "../components/Home/Product"
-import Products2 from "../components/Home/Products2"
-import Contact from "../components/Home/Contact"
-import Hero2 from "../components/Globals/Hero2"
-import Navbar from "../components/Globals/Navbar"
 import HeroTextLeft from "../components/Globals/HeroTextLeft"
+import Layout from "../components/layout"
 
-const IndexPage = ({ data }) => (
+const CaseificioPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
-    <Navbar />
-    <Hero2
-      img={data.img.childImageSharp.fluid}
-      imgLeft={data.imgHeroBar.childImageSharp.fluid}
-      imgRight={data.tassello.childImageSharp.fluid}
-      styleClass="default-hero2"
-    />
+    <Link to="/"> &#8592;Torna all'Homepage</Link>
+    <div
+      style={{
+        height: "100vh",
+        display: "grid",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1>PAGINE CASEIFICIO TOSI</h1>
+    </div>
   </Layout>
 )
 
@@ -69,4 +64,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default CaseificioPage

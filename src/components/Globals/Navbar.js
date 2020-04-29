@@ -2,6 +2,10 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.jpg"
 import { FaCartArrowDown } from "react-icons/fa"
+import { FaHamburger } from "react-icons/fa"
+import { FcShop } from "react-icons/fc"
+import { FaCheese } from "react-icons/fa"
+import { IoIosBasket } from "react-icons/io"
 
 const Navbar = () => {
   const [state, setNavState] = useState({
@@ -10,13 +14,18 @@ const Navbar = () => {
     links: [
       {
         id: 1,
-        path: "/",
-        text: "home",
+        path: "/caseificio",
+        text: "Caseificio",
       },
       {
         id: 2,
-        path: "/about",
-        text: "about",
+        path: "/gorgonzolaBar",
+        text: "Gorgonzola Bar",
+      },
+      {
+        id: 3,
+        path: "/tosiShop",
+        text: "Shop",
       },
     ],
   })
@@ -35,13 +44,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-sm  navbar-light">
+    <nav className="navbar">
       <Link to="/" className="navbar-brand">
         <img style={{ maxWidth: 70 }} src={logo} alt="logo" />
       </Link>
 
       <button className="navbar-toggler" type="button" onClick={navbarHandler}>
-        <span className="navbar-toggler-icon" />
+        <FaCheese className="hamburger-icon" />
       </button>
       <div className={state.css}>
         <ul className="navbar-nav mx-auto">
@@ -54,8 +63,8 @@ const Navbar = () => {
               </li>
             )
           })}
-          <li className="nav-item ml-sm-5 ">
-            <FaCartArrowDown className="cart-icon snipcart-checkout" />
+          <li className="nav-item">
+            <IoIosBasket className="cart-icon snipcart-checkout" />
           </li>
         </ul>
       </div>

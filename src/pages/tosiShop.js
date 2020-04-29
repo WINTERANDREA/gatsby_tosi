@@ -12,16 +12,13 @@ import Hero2 from "../components/Globals/Hero2"
 import Navbar from "../components/Globals/Navbar"
 import HeroTextLeft from "../components/Globals/HeroTextLeft"
 
-const IndexPage = ({ data }) => (
+const TosiShop = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Navbar />
-    <Hero2
-      img={data.img.childImageSharp.fluid}
-      imgLeft={data.imgHeroBar.childImageSharp.fluid}
-      imgRight={data.tassello.childImageSharp.fluid}
-      styleClass="default-hero2"
-    />
+
+    <Hero img={data.img.childImageSharp.fluid} styleClass="default-hero" />
+    <Product items={data.list} />
+    <Products2 />
   </Layout>
 )
 
@@ -69,4 +66,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default TosiShop

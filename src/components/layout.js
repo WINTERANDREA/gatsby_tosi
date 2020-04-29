@@ -11,13 +11,9 @@ import {} from "gatsby"
 
 import "./layout.css"
 import Navbar from "./Globals/Navbar"
+import Hero2 from "./Globals/Hero2"
 
-const Layout = ({ children }) => (
-  <>
-    <Navbar />
-    {children}
-  </>
-)
+const Layout = ({ children }) => <>{children}</>
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
