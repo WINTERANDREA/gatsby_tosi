@@ -15,7 +15,7 @@ import HeroTextLeft from "../components/Globals/HeroTextLeft"
 const TosiShop = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-
+    <Navbar />
     <Hero img={data.img.childImageSharp.fluid} styleClass="default-hero" />
     <Product items={data.list} />
     <Products2 />
