@@ -18,7 +18,7 @@ const Product2 = ({ product }) => {
             className="btn btn-green mt-3  snipcart-add-item"
             data-item-id={product.id}
             data-item-price={product.price}
-            data-item-url="/paintings/starry-night"
+            data-item-url="https://gatsby-tosi.netlify.app/tosiShop/"
             data-item-description={product.description.description}
             data-item-name={product.title}
             data-item-image={product.image.fixed.src}

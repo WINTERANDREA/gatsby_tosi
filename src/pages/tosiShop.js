@@ -11,11 +11,12 @@ import Contact from "../components/Home/Contact"
 import Hero2 from "../components/Globals/Hero2"
 import Navbar from "../components/Globals/Navbar"
 import HeroTextLeft from "../components/Globals/HeroTextLeft"
+import Navbar2 from "../components/Globals/Navbar2"
 
 const TosiShop = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Navbar />
+    <Navbar2 />
     <Hero img={data.img.childImageSharp.fluid} styleClass="default-hero" />
     <Product items={data.list} />
     <Products2 />

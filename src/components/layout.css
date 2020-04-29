@@ -40,7 +40,11 @@ a:focus {
   margin: 0;
 }
 .text-green {
-  color: var(--tosi-green);
+  color: var(--tosi-green) !important;
+}
+
+.nav-link.text-green {
+  color: var(--tosi-green) !important;
 }
 
 .btn-green,
@@ -99,6 +103,12 @@ a:focus {
   font-size: 2rem;
 }
 
+.cart-icon.green {
+  cursor: pointer;
+  color: var(--tosi-green);
+  font-size: 2rem;
+}
+
 .cart-icon:active,
 .cart-icon:focus {
   outline: none;
@@ -110,6 +120,11 @@ a:focus {
 
 .hamburger-icon {
   color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.hamburger-icon2 {
+  color: var(--tosi-green);
   cursor: pointer;
   font-size: 2rem;
 }
